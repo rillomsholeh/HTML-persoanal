@@ -1,79 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact Form</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
 
-    <body>
+<body>        
+    
+    <!-- awal navbar -->
+    <nav>
 
-        <!-- awal navbar -->
-        <nav> 
+        <div class="left">
+         <img src="assets/logo.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="">BLOG</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="left">
+        <div class="right">
+            <a>CONTACT</a>
+        </div>
 
-                <img src="assets/logo.png" alt="logo">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="right">
-                <a href="contact.html">Contact Me</a>
-            </div>
-
-        </nav>
-        <!-- akhir navbar -->
+    </nav>
+    <!-- akhir navbar -->
 
 
+    <!-- form validation -->
         <form>
-
-            <div>        
-                <label for="input-name">Name</label>
+            <h3>Get Contact</h3>
+            <div>
+                <label for="input-name">Nama</label>
                 <input id="input-name" type="text">
             </div>
 
             <div>
-                <label for="input-email">Email</label>
+                <label for="input-email">E-mail</label>
                 <input id="input-email" type="email">
-            </div>
-
-            <div>
+             <div>
                 <label for="input-phone">Phone Number</label>
                 <input id="input-phone" type="number">
             </div>
 
-            <div>
-                <input type="checkbox" id="html" value="HTML">
+
+            <div class="checkbox">
                 <label for="html">HTML</label>
-
-                <input type="checkbox" id="css" value="CSS">
+                <input type="checkbox" id="html" value="html">
                 <label for="css">CSS</label>
+                <input type="checkbox" id="css" value="css">
             </div>
+
 
             <div>
-                <label for="input-subject">Subject</label>
-                <select id="input-subject">
-                    <option value="">Select Here</option>
-                    <option>I'm Hiring</option>
-                    <option>Problem With Our Site</option>
-                </select>
+            <label for="Subject">Subject</label>
+            <select id="subject">
+                <option value=""></option>
+                <option>html</option>
+                <option>Css</option>
+            </select>
             </div>
 
-            <div>
-                <label for="input-message">Your Message</label>
-                <textarea id="input-message"></textarea>
-            </div>
+            <label for="message">Pesan Personal</label>
+            <textarea id="message" cols="20" rows="5" maxlength="100"></textarea>
 
-            <button type="button" onclick="submitData()">Submit</button>
+            <button type="button" onclick="submitData()">kirim</button>
 
         </form>
+    <!-- akhir form validation -->
 
-        <script src="form.js"></script>
-
-    </body>
+</body>
 </html>
