@@ -1,4 +1,3 @@
-
 let blogs = []
 
 function addBlog(event){

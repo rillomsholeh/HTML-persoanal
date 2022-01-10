@@ -1,60 +1,70 @@
-function submitData() {
-  
-    let name = document.getElementById('input-name').value
-    let email = document.getElementById('input-email').value
-    let phone = document.getElementById('input-phone').value
-    let subject = document.getElementById('input-subject').value
-    let message = document.getElementById('input-message').value
+function submitData(){
 
-    console.log(name);
-    console.log(email);
+    let nama  = document.getElementById("input-name").value
+    let email = document.getElementById("input-email").value
+    let phone = document.getElementById("input-phone").value
+    let subject = document.getElementById("subject").value
+    let message = document.getElementById("message").value
+
+
+    console.log(nama);
+    console.log(email);``
     console.log(phone);
     console.log(subject);
     console.log(message);
 
 
-    if (document.getElementById('html').checked & document.getElementById('css').checked) {
-        console.log(document.getElementById('html').value + document.getElementById('css').value );
 
-    } else if (document.getElementById('html').checked) {
+    if (document.getElementById('html').checked & document.getElementById('css').checked ){        
+        console.log(document.getElementById('html').value + document.getElementById('css').value);
+    
+    } else if (document.getElementById('html').checked){
         console.log(document.getElementById('html').value)
 
-    } else if (document.getElementById('css').checked) {
+    } else if (document.getElementById('css').checked){
         console.log(document.getElementById('css').value)
     }
 
 
-    if (name == '') {
-        alert("Nama harus diisi")
-    } else if (email == '') {
-        alert("Email harus diisi")
-    } else if (phone == '') {
-        alert("Phone harus diisi")
-    } else if (subject == '') {
-        alert("Subject harus diisi")
-    } else if (message == '') {
-        alert("Pesan harus diisi")
+    if ( nama ==''){
+        alert("nama harus diisi")
+    } else if ( email ==''){
+        alert("email harus diisi")
+    } else if( phone ==''){
+        alert("phone harus diisi")
+    } else if( subject ==''){
+        alert("subject harus di pilih")
+    }else if( message ==''){
+        alert("pesan harus di isi")
     }
 
-    // if (name == '' || email == '' || phone == '' || subject == '' || message=='') {
-    //     alert("Semua wajib diisi")
+    // if ( nama =='' || email=='' || phone=='' || subject=='' || message==''){
+    //     alert ("semua isi")
     // }
 
-    let emailReceiver = 'samsul@mail.com'
+    
+    let emailreceiver = 'rmsholeh76@gmail.com'
 
     let a = document.createElement('a')
 
-    a.href = `mailto: ${emailReceiver}?subject=${subject}&body=Hallo my name ${name}, ${message}, call ${phone}`
+    a.href = `mailto:${emailreceiver}?subject=${subject}&body=${nama} ${message}`
 
-    a.click()
 
+
+
+// menampung data berbentuk object
     let dataObject = {
-        name: name,
+        namaBelakang: nama,
         email: email,
-        phoneNumber: phone,
+        phone: phone,
         subject: subject,
-        message: message
+        message: message 
     }
 
-    console.log(dataObject)
-}
+    console.log(dataObject);
+
+
+
+
+
+    }
