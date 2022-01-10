@@ -15,7 +15,7 @@ function addBlog(event){
         title: title,
         content: content,
         image: image,
-        author: 'Samsul Rijal',
+        author: 'muhammad sholeh',
         postAt: new Date()
     }
 
