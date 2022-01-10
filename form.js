@@ -64,7 +64,4 @@ function submitData(){
     console.log(dataObject);
 
 
-
-
-
-    }
+    }   

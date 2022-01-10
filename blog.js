@@ -6,9 +6,9 @@ function addBlog(event){
     let title = document.getElementById('input-blog-title').value
     let content = document.getElementById('input-blog-content').value
 
-    let image = document.getElementById('input-blog-image').files // files untuk mendapatkan data file keseluruhan dari gambar
+    let image = document.getElementById('input-blog-image').files 
 
-    image = URL.createObjectURL(image[0]) // untuk membuat url gambar, agar bisa diakses/tampil
+    image = URL.createObjectURL(image[0])
 
     let blog ={
         title: title,
@@ -18,7 +18,7 @@ function addBlog(event){
         postAt: new Date()
     }
 
-    blogs.push(blog) // untuk mengirimkan data blog ke dalam variabel blogs yang ada diatas di tampung di array
+    blogs.push(blog) 
 
     console.log(blogs);
 
@@ -34,8 +34,7 @@ function addBlog(event){
 }
 
 
-// DOM Manipulation
-
+// DOM Manipulation Data
 function renderBlog() {
     let contentContainer = document.getElementById('contents')
 
@@ -128,7 +127,7 @@ function firstBlogContent() {
 
 let month = ['January', 'Februari', 'March', 'April', 'May', 'June', 'July', 'August', 'September','October', 'November','December']
 
-// isi dari parameter time ada di potsAt di atas, yang isinya adalah new Date(), dari new Date(), di pecahkan/tampung di variabel dibawah
+
 function getFullTime(time) {
 
   let date = time.getDate() // mendapatkan tanggal
@@ -184,8 +183,8 @@ function getDistanceTime(time) {
 
 }
 
-// untuk menjalankan function render blog setiap 3 detik
+// untuk menjalankan function render blog setiap 1 detik
 setInterval(() => {
   // console.log('render');
   renderBlog()
-}, 3000)
+}, 1000)
