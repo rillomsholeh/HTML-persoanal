@@ -1,5 +1,6 @@
 let blogs = []
 
+
 function addBlog(event){
     event.preventDefault()
     
@@ -19,9 +20,7 @@ function addBlog(event){
     }
 
     blogs.push(blog) 
-
     console.log(blogs);
-
 
     // looping
 
@@ -138,11 +137,13 @@ function getFullTime(time) {
   let minutes = time.getMinutes() // mendapatkan menit
 
 
+
   let fullTime = `${date} ${month[monthIndex]} ${year} ${hours}:${minutes} WIB`
 
   return fullTime
 
 }
+
 
 function getDistanceTime(time) {
 
